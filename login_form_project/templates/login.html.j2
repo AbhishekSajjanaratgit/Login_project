@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+</head>
+<body>
+    <header>
+        <h1>Login-Page</h1>
+    </header>
+    <div>
+        <form method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" required><br>     <!-- Client side validation  -->
+            <label for="Password">Password</label>
+            <input type="password" name="password" required><br>    <!-- Client side validation  -->
+            <button type="submit">Submit</button><br>
+            {{ error }}
+        </form>
+    </div>
+
+    <a href="{{ url_for('index') }}"><button>LogOut</button></a>
+
+</body>
+</html>

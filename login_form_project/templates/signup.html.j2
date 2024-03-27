@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+</head>
+<body>
+    <h1>Sign-up Page</h1>
+    <form action="signup" method="post">
+        <label for="name">Enter name</label>
+        <input type="text" name="name" placeholder="Name">
+        
+        <label for="email">Enter email</label>
+        <input type="email" name="email" required placeholder="Email">
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" required placeholder="Password">
+        
+        <label for="age">Enter Age:</label>
+        <input type="number" placeholder="Age" name="age">
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" >
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" ><br>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number"><br>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+    <a href="{{ url_for('index') }}"><button>LogOut</button></a>
+
+</body>
+</html>

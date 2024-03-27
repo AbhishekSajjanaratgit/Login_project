@@ -1,0 +1,33 @@
+header{
+    border: solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.heading{
+    margin-left: 60px;
+}
+
+.nav-links{
+    list-style: none;
+    margin-right: 60px;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.quote {
+    margin-top: 100px;
+    align-items: center;
+}
+.quote pre{
+    margin-right: 200px;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+}
